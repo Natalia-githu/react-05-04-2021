@@ -1,0 +1,56 @@
+html, body, #app {
+    margin: 0;
+    height: 100%;
+    font-family: Tahoma, sans-serif;
+}
+
+.message-field {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e2e2;
+    height: 50%;
+    width: 100%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.layout-right-side {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.message {
+    background-color: lightblue;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.message-sender {
+    color: gray;
+    font-size: 14px;
+}
+
+
+.layout-canvas{
+    display: flex;
+
+}
+.header{
+    background-color:  #e2e2e2;
+    padding: 30px;
+    width:100%;
+
+}
+.layout-left-side{
+    width: 30%;
+}
+.layout{
+    height: 100%;
+}

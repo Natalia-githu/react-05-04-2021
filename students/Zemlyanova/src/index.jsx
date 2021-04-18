@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/MessageField.jsx';
+// import MessageField from './components/MessageField.jsx';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Layout from './components/Layout.jsx'
+
 
 
 // let messages = ['Привет', 'Как дела?'];
@@ -34,6 +37,12 @@ import App from './components/MessageField.jsx';
 //     document.getElementById('root'),
 // );
 ReactDOM.render(
-    <App />,
+
+
+
+    <MuiThemeProvider>
+        <Layout />
+    </MuiThemeProvider>,
+
     document.getElementById('root'),
 );
