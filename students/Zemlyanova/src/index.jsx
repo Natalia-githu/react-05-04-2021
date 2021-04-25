@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { BrowserRouter } from 'react-router-dom';
-import Router from './components/Router.jsx'
+import { Provider } from 'react-redux';
+import Router from './containers/Router.jsx'
+import initStore from './utils/store.js';
 
 
 // let messages = ['Привет', 'Как дела?'];
@@ -37,11 +39,12 @@ import Router from './components/Router.jsx'
 // );
 ReactDOM.render(
 
-
+    <Provider store={ initStore() }>
     <BrowserRouter>
     <MuiThemeProvider>
         <Router />
     </MuiThemeProvider>
-    </BrowserRouter>,
+    </BrowserRouter>
+    </Provider>,
     document.getElementById('root'),
 );
