@@ -8,7 +8,7 @@ export default class Header extends React.Component {
     };
 
     static defaultProps = {
-        chatId: '',
+        chatId: 1,
     };
 
     render() {

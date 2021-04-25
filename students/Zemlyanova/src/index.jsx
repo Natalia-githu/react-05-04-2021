@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import MessageField from './components/MessageField.jsx';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Layout from './components/Layout.jsx'
-
+import { BrowserRouter } from 'react-router-dom';
+import Router from './components/Router.jsx'
 
 
 // let messages = ['Привет', 'Как дела?'];
@@ -39,10 +38,10 @@ import Layout from './components/Layout.jsx'
 ReactDOM.render(
 
 
-
+    <BrowserRouter>
     <MuiThemeProvider>
-        <Layout />
-    </MuiThemeProvider>,
-
+        <Router />
+    </MuiThemeProvider>
+    </BrowserRouter>,
     document.getElementById('root'),
 );
